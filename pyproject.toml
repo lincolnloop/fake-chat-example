@@ -1,0 +1,22 @@
+[project]
+name = "fake-chat-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-community>=0.3.14",
+    "langchain>=0.3.14",
+    "nanodjango>=0.9.2",
+    "langchain-ollama>=0.2.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-django>=4.9.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-s"
+filterwarnings = ["ignore"]
